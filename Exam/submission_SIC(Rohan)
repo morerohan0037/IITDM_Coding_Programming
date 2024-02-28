@@ -1,0 +1,24 @@
+1)  Banana Apple Strawberry
+
+2)  10 30 50 70 90
+
+3)  Tomato Strawberry Grapes
+
+4)  50 60 70 80 90 100
+
+5)  59 11
+
+6)  Total 2 times searched
+
+7)  def anagram(x,y):
+    dict1={}
+    for i in x:
+        dict1[i]=x.count(i)
+    for i in y:
+        if i not in dict1 or dict1[i]!=x.count(i):
+            return False
+    return True
+
+    x=input("Enter x:")
+    y=input("Enter y:")
+    print(anagram(x,y))
